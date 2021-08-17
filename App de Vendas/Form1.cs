@@ -98,7 +98,7 @@ namespace App_de_Vendas
 
         private void button2_Click(object sender, EventArgs e)
         {          
-            Form2 form2 = new Form2(textBox1.Text, textBox2.Text, textBox3.Text, label9.Text,);
+            Form2 form2 = new Form2(textBox1.Text, textBox2.Text, textBox3.Text, label9.Text, listView1.Items);
             form2.ShowDialog();
         }
     }
