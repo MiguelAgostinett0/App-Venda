@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\bin\Debug\App de Vendas.exe.config
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\bin\Debug\App de Vendas.exe
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\bin\Debug\App de Vendas.pdb
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App de Vendas.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App_de_Vendas.Form1.resources
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App_de_Vendas.Properties.Resources.resources
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App de Vendas.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App de Vendas.exe
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App de Vendas.pdb
+C:\Users\Usuario\source\repos\App de Vendas\App de Vendas\obj\Debug\App_de_Vendas.Form2.resources
