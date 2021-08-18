@@ -87,7 +87,7 @@ namespace App_de_Vendas
             textBox5.Text = "";
             textBox6.Text = "";
             listView1.Items.Clear();
-            label9.Text = "R$ 00";
+            label9.Text = "R$ 0,00";
             newtotal = 0;
         }
 
@@ -97,8 +97,24 @@ namespace App_de_Vendas
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {          
-            Form2 form2 = new Form2(textBox1.Text, textBox2.Text, textBox3.Text, label9.Text, listView1.Items);
+        {
+            if (textBox1.Text.Trim().Equals(string.Empty))
+            {
+                MessageBox.Show("Preencha o Numero da venda", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (textBox2.Text.Trim().Equals(string.Empty))
+            {
+                MessageBox.Show("Preencha a data", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (textBox3.Text.Trim().Equals(string.Empty))
+            {
+                MessageBox.Show("Preencha o seu nome", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Form2 form2 = new Form2(listView1, textBox1.Text, textBox2.Text, textBox3.Text, label9.Text);
             form2.ShowDialog();
         }
     }

@@ -11,12 +11,14 @@ using System.Windows.Forms;
 namespace App_de_Vendas
 {
     public partial class Form2 : Form
-    {
-        public Form2(String v1, String v2, String v3, String v4, ListView.ListViewItemCollection list)
-        { 
+    {     
+        public ListView _listView { get; set; }
+
+        public Form2(ListView listView, String v1, String v2, String v3, String v4)
+        {
+            _listView = listView;
 
             InitializeComponent();
-
 
             label2.Text = "Venda #" + v1;
 
@@ -26,7 +28,7 @@ namespace App_de_Vendas
 
             label5.Text = "Total: " + v4;
 
-            listView1.Items.Add(list[0]);
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -39,6 +41,8 @@ namespace App_de_Vendas
             listView1.Columns.Add("Quantidade", 150, HorizontalAlignment.Left);
             listView1.Columns.Add("Valor Unitário", 150, HorizontalAlignment.Left);
             listView1.Columns.Add("Valor Total", 150, HorizontalAlignment.Left);
+
+            listView1.Items.AddRange((from ListViewItem item in _listView.Items select (ListViewItem)item.Clone()).ToArray());
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -48,7 +52,7 @@ namespace App_de_Vendas
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
